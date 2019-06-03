@@ -8,6 +8,14 @@
 </head>
 <body>
     <script> 
+    function formataendereco(endereco) {
+        return "  O usuário mora em"+  " " + endereco.cidade
+     + "/" + endereco.uf 
+     + ", no bairro " + endereco.bairro 
+     + ", na rua"+  " " +endereco.rua
+     +  " " + "com no."+  " " + endereco.numero
+
+    }
     var endereco = {
         rua: "dos pinheiros",
         numero: 1293,
@@ -15,11 +23,7 @@
         cidade: "são paulo",
         uf: "SP"
     };
-    alert("  O usuário mora em"+  " " + endereco.cidade
-     + "/" + endereco.uf 
-     + ", no bairro " + endereco.bairro 
-     + ", na rua"+  " " +endereco.rua
-     +  " " + "com no."+  " " + endereco.numero);
+    alert();
       
     </script>
 </body>
